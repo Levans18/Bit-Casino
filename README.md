@@ -1,4 +1,7 @@
-# Bit-Casino
+# Bit-Casino 🎰
 
-## Summary
+## Summary 📖
 personal casino made with c++
+
+## How To Play 💸
+1.
