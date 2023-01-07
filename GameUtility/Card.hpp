@@ -7,8 +7,8 @@
 using namespace std;
 using std::string, std::vector;
 
-static vector<string> cValues = {"ace","two","three","four","five","six","seven","eight","nine","ten","jack","queen","king"};
-static vector<string> cSuits = {"hearts","diamonds","clubs", "spades"};
+static vector<string> cValues = {"A","2","3","4","5","6","7","8","9","10","J","K","Q"};
+static vector<string> cSuits = {"♡","♢","♧","♤"};
 
 class Card {
     public:

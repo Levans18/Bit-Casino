@@ -12,6 +12,7 @@ class Deck {
         Deck();
         vector<Card> NewDeck();
         Card GetCard(int &&cardPos) noexcept;
+        Card RemoveFirst();
         void ShuffleDeck() noexcept;
     private:
         vector<Card> cards;

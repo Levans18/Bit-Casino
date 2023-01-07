@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include <random>
+#include <iterator>
+#include <random>
 
 #define NUM_VALUES 13
 #define NUM_SUITS 4
@@ -28,7 +30,14 @@ Card Deck::GetCard(int &&cardPos) noexcept{
     return cards[cardPos];
 }
 
+Card Deck::RemoveFirst(){
+    Card firstCard = cards[0];
+    cards.erase(cards.begin());
+    return firstCard;
+}
+
 void Deck::ShuffleDeck() noexcept{
-    auto rng = std::default_random_engine {};
+    auto rd = std::random_device {}; 
+    auto rng = std::default_random_engine { rd() };
     std::shuffle(std::begin(cards), std::end(cards), rng);
 }
