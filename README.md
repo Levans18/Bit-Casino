@@ -1,7 +1,7 @@
 # Bit-Casino 🎰
 
 ## Summary 📖
-personal casino made with c++
+Casino Game made using c++
 
 ## How To Play 💸
 1.
