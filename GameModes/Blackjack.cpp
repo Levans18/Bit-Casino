@@ -38,11 +38,11 @@ int Blackjack::StartGame(int &balance){
         cout << "(> ";
 
         cin >> userInput;
+        system("clear");
         switch (userInput)
         {
         case 1:
             /* code */
-            system("clear");
             GetBet(balance, bet);
             if(bet != 0){
                 PlayBlackjack(balance, bet);
@@ -397,6 +397,21 @@ int Blackjack::GetCount(vector<Card> &cards, bool hideHouse){
     }
     return count;
 }
-void Blackjack::HowToPlay(){
 
+void Blackjack::HowToPlay(){
+    string BackToMainMenu;
+    cout << "How to Play:" << endl;
+    cout << "Objective -> Attempt to beat dealer by getting count as close to 21 as possible, without going over 21." << endl;
+    cout << "Card Values/Scoring:" << endl;
+    cout << "\t *The ace is worth 11 if it would not cause the count to exceed 21 and be worth 1 if it is";
+    cout << "\t *The Face cards are worth 10" << endl;
+    cout << "\t *All others are normal" << endl;
+    cout << "Player Turn:" << endl;
+    cout << "\t Hit - Get delt a new card" << endl;
+    cout << "\t Stand - Hand it off to dealer" << endl;
+    cout << "Dealer Turn:" << endl;
+    cout << "\t Stand - Dealer stands above 17" << endl;
+    cout << "Enter any input to continue ..." << endl;
+    cin >> BackToMainMenu;
+    system("clear");
 }
